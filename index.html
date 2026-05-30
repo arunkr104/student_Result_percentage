@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h1>Student Result Dashboard</h1>
+
+        <input type="text" id="name" placeholder="Enter Student Name">
+
+        <input type="number" id="m1" placeholder=" Marks (physics)" min="0" max="100">
+        <input type="number" id="m2" placeholder=" Marks (Chemistry)" min="0" max="100">
+        <input type="number" id="m3" placeholder=" Marks (Math)" min="0" max="100">
+        <input type="number" id="m4" placeholder=" Marks (English)" min="0" max="100">
+        <input type="number" id="m5" placeholder=" Marks (Hindi)" min="0" max="100">
+
+        <button onclick="calculateResult()">Generate Result</button>
+    </div>
+
+    <div class="result-card" id="resultCard">
+        <h2 id="studentName"></h2>
+
+        <div class="box">
+            <h3>Total Marks</h3>
+            <span id="total"></span>
+        </div>
+
+        <div class="box">
+            <h3>Percentage</h3>
+            <span id="percentage"></span>
+        </div>
+
+        <div class="box">
+            <h3>Grade</h3>
+            <span id="grade"></span>
+        </div>
+
+        <div class="box">
+            <h3>Status</h3>
+            <span id="status"></span>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
